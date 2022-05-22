@@ -1,0 +1,94 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(27, 131, 117);
+    color: white;
+}
+
+
+.container{
+    
+
+    background-color: rgba(111, 235, 218, 0.6);
+    margin: 40px;
+    padding: 40px 40px ;
+
+}
+
+.formContainer{
+    position: relative;
+    padding: 20px;
+    margin: 20px 0 40px;
+    width:350px
+
+}
+
+
+.formContainer input{
+background-color: transparent;
+border: 0;
+border-bottom: 2px white solid;
+display: block;
+width: 100%;
+padding: 15px 0;
+color: white;
+}
+
+.formContainer input:focus{
+    outline: 0;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn{
+    width: 100%;
+   background-color: rgb(27, 56, 52);
+   border: 2px solid rgb(27, 56, 52 );
+   color: white;
+   cursor: pointer;
+   border-radius: 5px;
+   padding: 10px;
+   font-size: 20px;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.formContainer label{
+    position: absolute;
+    top: 34px;
+    left: 23px;
+}
+
+.formContainer label span{
+    font-size: 18px;
+    display: inline-block;
+    min-width: 5px;
+}
+
+.formContainer input:focus + label span,
+.formContainer input:valid + label span{
+
+
+transform: translateY(-30px);
+transition: 0.3s  ease-in-out;
+}
+
+.formContainer input:focus, .formContainer input:valid{
+    outline: 0;
+
+    
+}
+
+   
